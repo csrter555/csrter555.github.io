@@ -1,1 +1,210 @@
-</head><body class="c24 doc-content"><p class="c18 c31"><span class="c3"></span></p><table class="c0"><tr class="c32"><td class="c19" colspan="1" rowspan="1"><p class="c29 title" id="h.x8fm1uorkbaw"><span class="c17 c9 c21">Carter (csrter555)</span></p><p class="c2 subtitle" id="h.ymi089liagec"><span>Innovative. </span><span class="c5 c30">Delicate. </span><span class="c28 c5 c27 c9">Modern. &mdash; Work You&rsquo;d Pay Millions For At A Price So Affordable You&rsquo;ll Double Take. </span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c2"><span class="c17 c27 c9 c28">(567) 242-4656</span></p><p class="c2"><span class="c9 c14">carter.business.est@gmail.com</span></p></td></tr><tr class="c4"><td class="c19" colspan="1" rowspan="1"><h1 class="c12" id="h.y7d3xdxnr44m"><span class="c1">EXPERIENCE</span></h1><h2 class="c6" id="h.rfgvkg2ifhfd"><span>Orihost</span><span class="c9">, </span><span class="c5">Remote &mdash; </span><span class="c8 c5">Technical Support Specialist</span></h2><h3 class="c10" id="h.n64fgzu3lwuy"><span>SEPTEMBER 2025 - PRESENT</span></h3><p class="c11"><span>Orihost accepted my remote application in September of 2025 and has employed me since then. I have learned a lot from this company. It is a hosting service for Minecraft servers, Websites, Discord bots, and more. </span></p><h2 class="c6" id="h.wj0puh61kxsr"><span>.host</span><span class="c9">, </span><span class="c5">Remote &mdash; </span><span class="c15 c8 c5 c9">Customer Support Specialist</span></h2><h3 class="c10" id="h.8hk593fs3sag"><span>MARCH</span><span class="c5 c7">&nbsp;2026 - APRIL 2026</span></h3><p class="c11"><span class="c13 c5">I have departed this company due to an internal conflict that reflected low quality of personal values. It is a hosting company that hosts Discord bots, webpages, and more. &nbsp;</span></p><h2 class="c6" id="h.1hxcpsc1hco2"><span>Vexicon, </span><span class="c5">Remote</span><span>&nbsp;</span><span class="c5">&mdash; </span><span class="c8 c5 c9 c15">Design Specialist &amp; Management</span></h2><h3 class="c10" id="h.ybypdmed418m"><span>APRIL 2025 - AUGUST 2025</span></h3><p class="c11"><span class="c13 c5">I worked for this company till its closing. While there, I was a Graphic designer, Bot Designer, Web Designer, and more. I worked in their Management Team for around a month, giving me HR experience. I also worked in their PR, Media, and Internal Affairs Divisions. </span></p><h2 class="c6" id="h.adpby5jabdzf"><span>Blossom Customs</span><span class="c17">, </span><span class="c5">Remote &mdash; </span><span class="c15 c8 c5 c9">Design Specialist &amp; Operations</span></h2><h3 class="c10" id="h.wfxz8w4nj59a"><span>SEPTEMBER</span><span class="c7 c5">&nbsp;2025 - FEBRUARY 2026</span></h3><p class="c11"><span class="c13 c5">I started here as a designer, then applied for a high-ranking position, becoming part of their management team, then being promoted to operations nearly a month after in January. I worked here as a Graphics designer and Bot Developer. I left this company due to internal conflict with an equal-ranking staff member. </span></p><h2 class="c6" id="h.pyb8f0galahj"><span>Illustrate Designs, </span><span class="c5">Remote &mdash; </span><span class="c15 c8 c5 c9">Design Specialist &amp; Management</span></h2><h3 class="c10" id="h.r73d3w3xst3j"><span>MARCH</span><span class="c7 c5">&nbsp;2025 - FEBRUARY 2026</span></h3><p class="c11"><span class="c13 c5">I started here as a designer and was promoted to a senior designer due to my work ethic, and then applied for a high-ranking position, becoming part of their management team. I worked here as a Graphics designer and Bot Developer. I left this company due to better opportunities. </span></p><p class="c11 c18"><span class="c13 c5"></span></p><h1 class="c12" id="h.jhv78pp9wtzd"><span>PROJECTS</span></h1><h2 class="c6" id="h.vm051rmyhoww"><span>Carter&rsquo;s Customs Management</span><span>&nbsp;</span><span class="c5">&mdash; </span><span class="c8 c5">This is a high-demand Discord bot needing vast API knowledge.</span></h2><p class="c11"><span class="c13 c5">This is the bot I coded for my own Discord design server that had several API commands for server operations and money flow. </span></p><h2 class="c6" id="h.i1i1pvnk3faf"><span>Taxas Roleplay Management </span><span class="c5">&mdash; </span><span class="c5 c8">This is a high-demand Discord bot needing vast API knowledge.</span></h2><p class="c11"><span class="c5 c13">This is the bot I coded for USD that had several API commands, connecting to a game via an API key, and taking back data through a GET request for a user to read back on Discord. </span></p></td><td class="c20" colspan="1" rowspan="1"><h1 class="c12" id="h.ca0awj8022e2"><span class="c1">SKILLS</span></h1><p class="c18 c22"><span class="c13 c5"></span></p><ul class="c23 lst-kix_d52h1clnbs3c-0 start"><li class="c11 c26"><span class="c13 c5">I am a Python, JavaScript, HTML, and React Native Coder with direct experience in database management, technical support, customer support, graphic design, and UI/UX design. </span></li><li class="c11 c26"><span class="c13 c5">My skill set allows me to glide through tasks and help people easily. &nbsp;</span></li></ul><h1 class="c12" id="h.cxxkes25b26"><span>LANGUAGES</span></h1><p class="c25"><span class="c13 c5">I am fluent in Spanish, English, and French. Though I am not the best at pronouncing non-English words. </span></p></td></tr></table><p class="c11 c18"><span class="c13 c5"></span></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carter Moore Resume</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: url("CMS BG.png") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.contact {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    border-left: 4px solid #ff7a00;
+    padding-left: 10px;
+}
+
+/* Job */
+.job {
+    margin-bottom: 15px;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.job-date {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Two Column Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <div class="name">Carter (csrter555)</div>
+            <div class="tagline">
+                Innovative. Delicate. Modern. — Work you'd pay millions for at a price you'll double take.
+            </div>
+        </div>
+        <div class="contact">
+            (567) 242-4656<br>
+            carter.business.est@gmail.com
+        </div>
+    </div>
+
+    <div class="grid">
+
+        <!-- LEFT SIDE -->
+        <div>
+
+            <!-- Experience -->
+            <div class="section">
+                <h2>Experience</h2>
+
+                <div class="job">
+                    <div class="job-title">Orihost — Technical Support Specialist</div>
+                    <div class="job-date">Sept 2025 - Present</div>
+                    <p>Remote hosting company for Minecraft servers, websites, and Discord bots.</p>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">.host — Customer Support Specialist</div>
+                    <div class="job-date">March 2026 - April 2026</div>
+                    <p>Left due to internal conflict and misaligned values.</p>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">Vexicon — Design Specialist & Management</div>
+                    <div class="job-date">April 2025 - August 2025</div>
+                    <p>Graphic design, bot development, HR, PR, and internal affairs.</p>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">Blossom Customs — Design & Operations</div>
+                    <div class="job-date">Sept 2025 - Feb 2026</div>
+                    <p>Promoted to management and operations leadership.</p>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">Illustrate Designs — Senior Designer & Management</div>
+                    <div class="job-date">March 2025 - Feb 2026</div>
+                    <p>Promoted through performance and leadership.</p>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="section">
+                <h2>Projects</h2>
+
+                <div class="job">
+                    <div class="job-title">Carter’s Customs Management</div>
+                    <p>Advanced Discord bot with API integrations and financial systems.</p>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">Taxas Roleplay Management</div>
+                    <p>Game-connected API bot retrieving and displaying user data.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div>
+
+            <!-- Skills -->
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Python, JavaScript, HTML, React Native</li>
+                    <li>Database Management</li>
+                    <li>UI/UX & Graphic Design</li>
+                    <li>Technical & Customer Support</li>
+                </ul>
+            </div>
+
+            <!-- Languages -->
+            <div class="section">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Spanish</li>
+                    <li>French</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
