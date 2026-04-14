@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>csrter555's Contact</title>
+<title>csrter555's Portfolio</title>
 
 <link rel="icon" type="image/png" href="logo2.png">
 <link rel="shortcut icon" href="logo2.png">
@@ -93,6 +93,17 @@ body {
     transition: 0.2s;
 }
 
+.btn-top {
+    position: absolute;  /* Stack over others */
+    top: 50%;            /* Position from top */
+    left: 50%;           /* Position from left */
+    transform: translate(-50%, -50%); /* Perfectly center */
+    z-index: 2;          /* Ensure it is on the top layer */
+    background-color: #98cfff;
+    color: #000055;
+    padding: 15px 30px;
+  }
+
 .btn-primary {
     background: #ff7a00;
     color: white;
@@ -129,10 +140,10 @@ body {
 
     <!-- Navbar -->
     <div class="navbar">
-        <h1>Carter's Contact Information</h1>
+        <h1>Carter's Portfolio</h1>
         <div>
             <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
             <a href="resume.html">Resume</a>
         </div>
     </div>
@@ -144,12 +155,16 @@ body {
             <p>
                 Work you'd pay millions for — at a price so affordable you'll double take.<br><br>
                 Developer, Designer, and Systems Builder specializing in Discord bots, APIs, and UI/UX.<br><br>
-                This part of the website is under development and is not finished as I am waiting for my Business Email to finish setting up.
+                This part of the website is under development and is not finished.
             </p>
 
             <div class="buttons">
-                <a href="mailto:contact@csrter555.github.io" class="btn-primary">Email Me (To Be Setup)</a>
-                <a href="portfolio.html" class="btn-secondary">View Work</a>
+                <a href="mailto:hireme@csrter555.github.io" class="btn-top">Hire Me (In Development)</a>
+                <a href="gfx.html" class="btn-secondary">Graphic Design</a>
+                <a href="websites.html" class="btn-secondary">Website Design</a>
+                <a href="bots.html" class="btn-secondary">Bot Design</a>
+                <a href="automatedsystems.html" class="btn-secondary">Automated Systems</a>
+                <a href="apis.html" class="btn-secondary">API Design</a>
             </div>
         </div>
     </div>
