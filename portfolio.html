@@ -18,15 +18,15 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Background */
 body {
+        background: url("background3.png") no-repeat center center fixed;
     background-size: cover;
     background-color: #111; /* fallback */
     min-height: 100vh;
     color: white;
 }
 
-/* Overlay */
+
 .overlay {
     background: rgba(0, 0, 0, 0.65);
     min-height: 100vh;
@@ -35,7 +35,7 @@ body {
     flex-direction: column;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ body {
     color: #ff7a00;
 }
 
-/* Hero */
+
 .hero {
     flex: 1;
     display: flex;
@@ -83,7 +83,7 @@ body {
     line-height: 1.6;
 }
 
-/* Buttons */
+
 .buttons a {
     text-decoration: none;
     padding: 12px 22px;
@@ -95,11 +95,11 @@ body {
 }
 
 .btn-top {
-    position: absolute;  /* Stack over others */
-    top: 50%;            /* Position from top */
-    left: 50%;           /* Position from left */
-    transform: translate(-50%, -50%); /* Perfectly center */
-    z-index: 2;          /* Ensure it is on the top layer */
+    position: absolute;  
+    top: 50%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    z-index: 2;          
     background-color: #98cfff;
     color: #000055;
     padding: 15px 30px;
@@ -138,13 +138,36 @@ body {
     color: black;
 }
 
-/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 15px 0;
+  font-size: 0.8rem;
+}
+
 .footer {
     text-align: center;
     padding: 15px;
     font-size: 0.8rem;
     color: #aaa;
 }
+
+.footer-legal {
+    text-align: left;
+    padding: 15px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.footer-other {
+    text-align: right;
+    padding: 15px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
 </style>
 
 </head>
@@ -153,7 +176,6 @@ body {
 
 <div class="overlay">
 
-    <!-- Navbar -->
     <div class="navbar">
         <h1>Carter's Portfolio</h1>
         <div>
@@ -163,7 +185,6 @@ body {
         </div>
     </div>
 
-    <!-- Hero -->
     <div class="hero">
         <div class="hero-content">
             <h2>Innovative. Delicate. Modern.</h2>
@@ -177,18 +198,17 @@ body {
                 <a href="https://mail.google.com/mail/?tf=cm&to=carter.business.est@gmail.com" target="_blank" class="btn-primary">Hire Me</a> 
             </div> 
                 <a href="gfx.html" class="btn-better">Graphic Design</a>
-                <a href="websites.html" class="btn-better">Website Design</a>
-                <a href="bots.html" class="btn-better">Bot Design</a>
-                <a href="automatedsystems.html" class="btn-better">Automated Systems</a>
-                <a href="apis.html" class="btn-better">API (Needing) Systems</a>
+                <a href="code-design.html" class="btn-better">Code Design</a>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        © 2026 Carter Moore — All Rights Reserved
-    </div>
+
+     <div class="footer-container">
+      <div class="footer-legal"><a href="tos.html">Terms •</a><a href="privacy.html"> Privacy •</a><a href="tou.html"> Usage Terms</a></div>
+      <div class="footer">© Copyright 2026, Carter Moore. All Rights Reserved.</div>
+      <div class="footer-other"><a href="https://github.com/csrter555" target="_blank"><img src="github.png"></a> <a href="https://mail.google.com/mail/?tf=cm&to=carter.business.est@gmail.com" target="_blank"><img src="gmail.png"></a></div>
+     </div> 
 
 </div>
 
