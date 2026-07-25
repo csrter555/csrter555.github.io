@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>csrter555's Website</title>
+
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="shortcut icon" href="assets/logo.png">
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Great+Vibes&display=swap');
+
+        :root {
+            --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
+            --font-size-heading: clamp(1.75rem, 1.5rem + 1.2vw, 3rem);
+            --font-size-script: clamp(2rem, 1.8rem + 1.5vw, 3.5rem);
+
+            --pink: #ffabfb;
+            --light-blue: #98cfff;
+            --white: #ffffff;
+            --black: #000000;
+            --navy: #000b1c;
+            --red: #9c0012;
+            --light-green: #87ff89;
+            --green: #00ff00;
+            --dark-green: #003801;
+            --light-yellow: #d3ff87;
+            --yellow: #ffff00;
+            --brown: #3d3300;
+            --orange: #ff7f00;
+            --dark-orange: #ff3f00;
+            --light-orange: #ffbf7f;
+            --blue: #0000ff;
+            --dark-blue: #000080;
+            --marine-green: #4b5320;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: white;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+            font-size: var(--font-size-base);
+        }
+
+        .font-times {
+            font-family: "Times New Roman", serif;
+        }
+
+        .font-good-vibes {
+            font-family: "Great Vibes", cursive;
+            font-size: var(--font-size-script);
+        }
+
+.background {
+    top: flex; 
+    left: flex;
+    width: 100%;
+    height: 100%;
+    right: flex;
+    bottom: flex;
+    color: --black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: #ff7a00;
+}
+
+/* Hero */
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #ccc;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.buttons a {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background: #ff7a00;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #ff9a33;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Carter (csrter555)</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Innovative. Delicate. Modern.</h2>
+            <p>
+                Work you'd pay millions for — at a price so affordable you'll double take.<br><br>
+                Developer, Designer, and Systems Builder specializing in Discord bots, APIs, and UI/UX.
+            </p>
+
+            <div class="buttons">
+                <a href="contact.html" class="btn-primary">Hire Me</a>
+                <a href="portfolio.html" class="btn-secondary">View Work</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2026 Carter Moore — All Rights Reserved
+    </div>
+
+</div>
+
+</body>
+</html>
