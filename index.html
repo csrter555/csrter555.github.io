@@ -17,7 +17,6 @@
             --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
             --font-size-heading: clamp(1.75rem, 1.5rem + 1.2vw, 3rem);
             --font-size-script: clamp(2rem, 1.8rem + 1.5vw, 3.5rem);
-
             --pink: #ffabfb;
             --light-blue: #98cfff;
             --white: #ffffff;
@@ -41,7 +40,11 @@
         body {
             margin: 0;
             font-family: "Inter", sans-serif;
-            background: white;
+            background-color: var(--navy);
+            color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .font-inter {
@@ -58,14 +61,12 @@
             font-size: var(--font-size-script);
         }
 
-.background {
-    top: flex; 
-    left: flex;
-    width: 100%;
-    height: 100%;
-    right: flex;
-    bottom: flex;
-}
+        .overlay {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+        }
 
 /* Navbar */
 .navbar {
