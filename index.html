@@ -1,198 +1,420 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>csrter555's Website</title>
+    <meta charset="UTF-5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="csrter555 - Portfolio | Discord Servers, Logos, Banners, Bots & Websites">
+    <meta name="theme-color" content="#0A0A0A">
+    
 
-<link rel="icon" type="image/png" href="assets/logo.png">
-<link rel="shortcut icon" href="assets/logo.png">
-
-<background style="background-color: var(--black)">
-
-<style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Great+Vibes&display=swap');
-
-        :root {
-            --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
-            --font-size-heading: clamp(1.75rem, 1.5rem + 1.2vw, 3rem);
-            --font-size-script: clamp(2rem, 1.8rem + 1.5vw, 3.5rem);
-            --pink: #ffabfb;
-            --light-blue: #98cfff;
-            --white: #ffffff;
-            --black: #000000;
-            --navy: #000b1c;
-            --red: #9c0012;
-            --light-green: #87ff89;
-            --green: #00ff00;
-            --dark-green: #003801;
-            --light-yellow: #d3ff87;
-            --yellow: #ffff00;
-            --brown: #3d3300;
-            --orange: #ff7f00;
-            --dark-orange: #ff3f00;
-            --light-orange: #ffbf7f;
-            --blue: #0000ff;
-            --dark-blue: #000080;
-            --marine-green: #4b5320;
+    <title>csrter555<title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Space Grotesk', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0A0A0A',
+                            card: '#171717',
+                            cardHover: '#1F1F1F',
+                            accent: '#FFFFFF',
+                            text: '#F5F5F5',
+                            muted: '#A1A1AA',
+                            border: '#27272A'
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
         }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-        body {
-            margin: 0;
-            font-family: "Inter", sans-serif;
-            background-color: var(--navy);
-            color: var(--white);
-            min-height: 100vh;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0A0A0A; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        
+        .glass {
+            background: rgba(23, 23, 23, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .placeholder-img {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 0.875rem;
+            text-align: center;
+            padding: 1rem;
         }
-
-        .font-inter {
-            font-family: "Inter", sans-serif;
-            font-size: var(--font-size-base);
+        
+        .filter-btn.active {
+            background: #fff;
+            color: #0A0A0A;
         }
-
-        .font-times {
-            font-family: "Times New Roman", serif;
+        
+        .work-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
-        .font-good-vibes {
-            font-family: "Great Vibes", cursive;
-            font-size: var(--font-size-script);
+        .work-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
         }
-
-        .overlay {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            width: 100%;
+        
+        .nav-item.active {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
         }
+        
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-}
-
-.navbar h1 {
-    font-size: 1.5rem;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 0.9rem;
-    transition: 0.2s;
-}
-
-.navbar a:hover {
-    color: #ff7a00;
-}
-
-/* Hero */
-.hero {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-content {
-    max-width: 750px;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    color: #ccc;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-/* Buttons */
-.buttons a {
-    text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 8px;
-    margin: 5px;
-    display: inline-block;
-    font-size: 0.95rem;
-    transition: 0.2s;
-}
-
-.btn-primary {
-    background: #ff7a00;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #ff9a33;
-}
-
-.btn-secondary {
-    border: 1px solid white;
-    color: white;
-}
-
-.btn-secondary:hover {
-    background: white;
-    color: black;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 0.8rem;
-    color: #aaa;
-}
-</style>
-
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
+<body class="bg-brand-dark text-brand-text font-sans antialiased">
 
-<body>
-
-<div class="overlay">
-
-    <!-- Navbar -->
-    <div class="navbar">
-        <h1>Carter (csrter555)</h1>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-
-    <!-- Hero -->
-    <div class="hero">
-        <div class="hero-content">
-            <h2>Innovative.<span class="font-good-vibes" style="color: var(--marine-green);"> Delicate.</span> Modern.</h2>
-            <p>
-                Work you'd pay millions for — at a price so affordable you'll double take.<br><br>
-                Developer, Designer, and Systems Builder specializing in Discord bots, APIs, and UI/UX.
-            </p>
-
-            <div class="buttons">
-                <a href="contact.html" class="btn-primary">Hire Me</a>
-                <a href="portfolio.html" class="btn-secondary">View Work</a>
+    <aside class="fixed left-0 top-0 h-full w-16 md:w-20 glass-nav z-40 flex flex-col items-center py-6 gap-6">
+        <a href="#home" class="w-10 h-10 rounded-full overflow-hidden border-2 border-white/10 hover:border-white/30 transition-colors">
+            <img src="assets/images/avatars/avatar.png" alt="Avatar" class="w-full h-full object-cover" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="w-full h-full bg-brand-card flex items-center justify-center text-xs text-brand-muted" style="display:none;">
+                <i class="fa-solid fa-user"></i>
             </div>
+        </a>
+        
+        <nav class="flex flex-col gap-3 mt-4">
+            <a href="#home" class="nav-item active w-11 h-11 rounded-xl flex items-center justify-center text-brand-muted hover:text-white hover:bg-white/5 transition-all" title="Home">
+                <i class="fa-solid fa-house text-lg"></i>
+            </a>
+            <a href="#portfolio" class="nav-item w-11 h-11 rounded-xl flex items-center justify-center text-brand-muted hover:text-white hover:bg-white/5 transition-all" title="Portfolio">
+                <i class="fa-solid fa-briefcase text-lg"></i>
+            </a>
+            <a href="#reviews" class="nav-item w-11 h-11 rounded-xl flex items-center justify-center text-brand-muted hover:text-white hover:bg-white/5 transition-all" title="Reviews">
+                <i class="fa-solid fa-star text-lg"></i>
+            </a>
+            <a href="#contact" class="nav-item w-11 h-11 rounded-xl flex items-center justify-center text-brand-muted hover:text-white hover:bg-white/5 transition-all" title="Contact">
+                <i class="fa-solid fa-envelope text-lg"></i>
+            </a>
+        </nav>
+        
+        <div class="mt-auto flex flex-col gap-3">
+            <a href="https://discord.com/users/967902527125323867" target="_blank" rel="noopener"
+               class="w-11 h-11 rounded-xl flex items-center justify-center text-brand-muted hover:text-[#5865F2] hover:bg-white/5 transition-all" title="Discord">
+                <i class="fa-brands fa-discord text-lg"></i>
+            </a>
         </div>
-    </div>
+    </aside>
 
-    <!-- Footer -->
-    <div class="footer">
-        © 2026 Carter Moore — All Rights Reserved
-    </div>
+    <button id="mobile-menu-btn" class="md:hidden fixed top-4 right-4 z-50 w-11 h-11 rounded-full glass-nav flex items-center justify-center text-white text-xl">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
-</div>
+    <main class="ml-16 md:ml-20 min-h-screen">
+        
+        <section id="home" class="min-h-screen flex items-center px-6 md:px-12 lg:px-20 py-16">
+            <div class="max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                
+                <div class="flex flex-col items-center lg:items-start animate-fade-in">
+                    <div class="glass rounded-2xl p-5 w-full max-w-sm border border-white/5">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="relative">
+                                <img src="assets/images/avatars/avatar.png" alt="Profile" 
+                                     class="w-14 h-14 rounded-full object-cover border-2 border-white/10"
+                                <span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-green-500 border-2 border-brand-card rounded-full"></span>
+                            </div>
+                            <div>
 
+                                <h2 class="font-semibold text-lg flex items-center gap-1.5">
+                                    csrter555
+                                    <i class="fa-solid fa-circle-check text-blue-400 text-sm" title="Verified"></i>
+                                </h2>
+                                <p class="text-brand-muted text-sm">Designer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-brand-dark/60 rounded-xl p-3 border border-white/5 mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-brand-card flex items-center justify-center">
+                                    <i class="fa-solid fa-palette text-brand-muted"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium">Available for work</p>
+                                    <p class="text-xs text-brand-muted">Open for commissions</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#portfolio" class="block w-full text-center bg-white text-brand-dark font-medium py-2.5 rounded-xl hover:bg-gray-200 transition-colors">
+                            View Portfolio →
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="space-y-6 animate-fade-in" style="animation-delay: 0.15s">
+                    <p class="text-lg md:text-xl leading-relaxed">
+                        👋 Hey, I'm <strong class="text-white">[Your Name]</strong>, a 
+                        <strong class="text-white">14+ Bot Developer/</strong>Designer.
+                    </p>
+                    
+                    <p class="text-brand-muted leading-relaxed">
+                        I have worked with Los Angeles RP (34k+). I worked at Illustrate Designs, .ocean, Virtual Designs, Pulse Customs, Judah's Customs, and many-many more. 
+                    </p>
+                    
+                    <p class="text-brand-muted leading-relaxed">
+                        I have worked with 13 clients who have given me 5 star reviews and/or recommended me to other clients. 
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <div class="bg-brand-card border border-white/5 rounded-xl px-4 py-3">
+                            <p class="text-2xl font-bold text-white">20+</p>
+                            <p class="text-xs text-brand-muted">Projects</p>
+                        </div>
+                        <div class="bg-brand-card border border-white/5 rounded-xl px-4 py-3">
+                            <p class="text-2xl font-bold text-white">20+</p>
+                            <p class="text-xs text-brand-muted">Clients</p>
+                        </div>
+                        <div class="bg-brand-card border border-white/5 rounded-xl px-4 py-3">
+                            <p class="text-2xl font-bold text-white">2+</p>
+                            <p class="text-xs text-brand-muted">Years Exp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="px-6 md:px-12 lg:px-20 py-20 border-t border-white/5">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-10 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold font-display mb-3">Portfolio</h2>
+                    <p class="text-brand-muted max-w-2xl">
+                        A selection of my work across Discord servers, logos, banners, bots, and websites.
+                    </p>
+                </div>
+                
+                <div class="flex flex-wrap gap-2 mb-10 reveal" id="category-filters">
+                    <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-brand-muted hover:bg-white/10 transition-colors" data-filter="all">
+                        All Work
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-brand-muted hover:bg-white/10 transition-colors" data-filter="discord-servers">
+                        <i class="fa-brands fa-discord mr-1.5"></i> Discord Servers
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-brand-muted hover:bg-white/10 transition-colors" data-filter="logos">
+                        <i class="fa-solid fa-pen-nib mr-1.5"></i> Logos
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-brand-muted hover:bg-white/10 transition-colors" data-filter="banners">
+                        <i class="fa-solid fa-image mr-1.5"></i> Banners
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-brand-muted hover:bg-white/10 transition-colors" data-filter="discord-bots">
+                        <i class="fa-solid fa-robot mr-1.5"></i> Discord Bots
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-brand-muted hover:bg-white/10 transition-colors" data-filter="websites">
+                        <i class="fa-solid fa-globe mr-1.5"></i> Websites
+                    </button>
+                </div>
+                
+                <div id="work-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <article class="work-card glass rounded-2xl overflow-hidden border border-white/5" data-category="discord-servers">
+                        <div class="aspect-video placeholder-img">
+                            <div>
+                                <i class="fa-brands fa-discord text-3xl mb-2 block"></i>
+                                <br><img src="assets/images/discord-servers/discord-logo.png" alt="Discord Logo" class="w-full h-full object-cover"><br>
+                                <span class="text-xs mt-1 block">assets/images/discord-servers/</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs text-brand-muted uppercase tracking-wider">Discord Server</span>
+                            <h3 class="font-semibold mt-1">Adding Soon!</h3>
+                            <p class="text-sm text-brand-muted mt-1">Description</p>
+                        </div>
+                    </article>
+                    
+                    <article class="work-card glass rounded-2xl overflow-hidden border border-white/5" data-category="logos">
+                        <div class="aspect-video placeholder-img">
+                            <div>
+                                <i class="fa-solid fa-pen-nib text-3xl mb-2 block"></i>
+                                <br><img src="assets/images/logos/canva-logo.png" alt="Discord Logo" class="w-full h-full object-cover"><br>
+                                <span class="text-xs mt-1 block">assets/images/logos/</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs text-brand-muted uppercase tracking-wider">Logo</span>
+                            <h3 class="font-semibold mt-1">Adding Soon</h3>
+                            <p class="text-sm text-brand-muted mt-1">Adding Soon</p>
+                        </div>
+                    </article>
+                    
+                    <article class="work-card glass rounded-2xl overflow-hidden border border-white/5" data-category="banners">
+                        <div class="aspect-video placeholder-img">
+                            <div>
+                                <i class="fa-solid fa-image text-3xl mb-2 block"></i>
+                                <br><img src="assets/images/banners/figma-logo.png" alt="Discord Logo" class="w-full h-full object-cover"><br>
+                                <span class="text-xs mt-1 block">assets/images/banners/</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs text-brand-muted uppercase tracking-wider">Banner</span>
+                            <h3 class="font-semibold mt-1">Adding Soon.</h3>
+                            <p class="text-sm text-brand-muted mt-1">Adding Soon</p>
+                        </div>
+                    </article>
+                    
+                    <article class="work-card glass rounded-2xl overflow-hidden border border-white/5" data-category="discord-bots">
+                        <div class="aspect-video placeholder-img">
+                            <div>
+                                <i class="fa-solid fa-robot text-3xl mb-2 block"></i>
+                                <br><img src="assets/images/discord-bots/python.png" alt="Discord Logo" class="w-full h-full object-cover"><br>
+                                <span class="text-xs mt-1 block">assets/images/discord-bots/</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs text-brand-muted uppercase tracking-wider">Discord Bot</span>
+                            <h3 class="font-semibold mt-1">Adding Soon.</h3>
+                            <p class="text-sm text-brand-muted mt-1">Adding Soon.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="work-card glass rounded-2xl overflow-hidden border border-white/5" data-category="websites">
+                        <div class="aspect-video placeholder-img">
+                            <div>
+                                <i class="fa-solid fa-globe text-3xl mb-2 block"></i>
+                                <br><img src="assets/images/discord-servers/githubw.png" alt="Discord Logo" class="w-full h-full object-cover"><br>
+                                <span class="text-xs mt-1 block">assets/images/websites/</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs text-brand-muted uppercase tracking-wider">Website</span>
+                            <h3 class="font-semibold mt-1">Adding Soon.</h3>
+                            <p class="text-sm text-brand-muted mt-1">Adding Soon.</p>
+                        </div>
+                    </article>
+                     
+                </div>
+                
+                <div id="empty-state" class="hidden text-center py-16 text-brand-muted">
+                    <i class="fa-solid fa-folder-open text-4xl mb-4 opacity-50"></i>
+                    <p>No work in this category yet. Add some!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="px-6 md:px-12 lg:px-20 py-20 border-t border-white/5">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-10 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold font-display mb-3">Client Reviews</h2>
+                    <p class="text-brand-muted">What clients say about working with me.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="reviews-grid">
+                    
+                    <!-- Review Card Template - copy this for each review -->
+                    <div class="glass rounded-2xl p-6 border border-white/5 reveal">
+                        <div class="flex gap-1 text-yellow-400 mb-3">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-brand-text leading-relaxed mb-4">
+                            "Be My First..."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-brand-card flex items-center justify-center text-brand-muted">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-sm">Maybe YOU</p>
+                                <p class="text-xs text-brand-muted">Order Something ;></p>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="px-6 md:px-12 lg:px-20 py-20 border-t border-white/5">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold font-display mb-3">Ready to elevate your project?</h2>
+                    <p class="text-brand-muted max-w-xl mx-auto">
+                        Whether you need a custom Discord server, logo, banner, bot, or website — I'm here to help. I work slowly and stick with you through every step. I do not send a final product and ask if it's "good enough." I send you screenshots as I work to see if that was your vision or not. 
+                    </p>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto reveal">
+                    <a href="mailto:services@csrter555.org" 
+                       class="glass rounded-2xl p-6 border border-white/5 hover:border-white/15 transition-colors group">
+                        <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4 group-hover:bg-white/10 transition-colors">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold mb-1">Email Me</h3>
+                        <p class="text-brand-muted text-sm">services@csrter555.org</p>
+                    </a>
+                    
+                    <a href="https://discord.com/users/967902527125323867" target="_blank" rel="noopener"
+                       class="glass rounded-2xl p-6 border border-white/5 hover:border-white/15 transition-colors group">
+                        <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4 group-hover:bg-white/10 transition-colors">
+                            <i class="fa-brands fa-discord text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold mb-1">Discord</h3>
+                        <p class="text-brand-muted text-sm">@csrter555</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="px-6 md:px-12 lg:px-20 py-8 border-t border-white/5 text-center text-brand-muted text-sm">
+            <p>© <span id="year"></span> csrter555. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
